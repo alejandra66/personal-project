@@ -1,7 +1,8 @@
-/* ./src/index.css */
+@import 'flowbite';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 body {
   margin: 0;
