@@ -5,7 +5,9 @@ module.exports = {
     },
     "extends": [
         "eslint:recommended",
-        "plugin:react/recommended"
+        "plugin:react/recommended",
+        "react-app",
+        "react-app/jest"
     ],
     "overrides": [
         {
@@ -28,5 +30,6 @@ module.exports = {
         "react"
     ],
     "rules": {
+        "react/react-in-jsx-scope": "off"
     }
 }
