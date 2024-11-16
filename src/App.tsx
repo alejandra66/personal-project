@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import MainContent from './Components/MainContent/MainContent';
+import './icons';
+import MainContent from './Components/MainContent/MainContent'
 
 const App: React.FC = () => {
     return (
