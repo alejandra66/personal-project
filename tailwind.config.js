@@ -12,6 +12,12 @@ module.exports = {
         'comp-header': '#801b40',
         'port-header': '#470a1f',
       },
+      fontSize: {
+        sm: ['14px', '20px'],
+        base: ['16px', '24px'],
+        lg: ['20px', '28px'],
+        xl: ['24px', '32px'],
+      },
     },
   },
   plugins: [

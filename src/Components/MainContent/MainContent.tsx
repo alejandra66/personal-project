@@ -6,12 +6,10 @@ const MainContent: React.FC = () => {
         <div className="main-content h-screen bg-gradient-to-l from-violet-red to-cerise-red overflow-hidden">
             <Navbar />
             <div className="flex items-center justify-center h-full">
-                <div className="text-center">
-                    <p className="text-3xl font-bold text-comp-header">COMPONENTS</p>
-                </div>
-                <div>
-                    <h1 className="text-3xl font-bold text-port-header">PORT-</h1>
-                    <h1 className="text-3xl font-bold text-port-header">FOLIO</h1>
+                <div className="text-center flex flex-col">
+                    <h1 className="abril-fatface-regular text-8xl font-extrabold text-comp-header">COMPONENTS</h1>
+                    <h2 className="passion-one-bold text-8xl font-extrabold text-port-header flex justify-end">PORT-</h2>
+                    <h2 className="passion-one-bold text-8xl font-extrabold text-port-header flex justify-end">FOLIO</h2>
                 </div>
             </div>
         </div>
