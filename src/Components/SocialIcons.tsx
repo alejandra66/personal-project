@@ -1,17 +1,19 @@
-import React from 'react';
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope as faEnvelopeRegular } from '@fortawesome/free-regular-svg-icons';
 
-const SocialIcons: React.FC = () => {
+interface SocialIconProps {
+    icon: any;
+    href: string;
+    color?: string;
+}
+
+const SocialIcon: React.FC<SocialIconProps> = ({ icon, href, color = "#470a1f" }) => {
     return (
-        <div className="flex flex-col absolute max-w-screen-x flex-wrap items-center justify-between mx-auto">
-            <FontAwesomeIcon icon={faGithub} className="text-3xl text-port-header"/>
-            <FontAwesomeIcon icon={faLinkedin} className="text-3xl text-port-header pt-4"/>
-            <FontAwesomeIcon icon={faEnvelopeRegular} className="text-3xl text-port-header pt-4"/>
-        </div>
+        <a href={href} target="_blank" rel="noopener noreferrer" className="mr-4">
+            <FontAwesomeIcon icon={icon} style={{ color }} className="text-3xl pb-4" />
+        </a>
     );
 };
 
-export default SocialIcons;
+export default SocialIcon;
+
