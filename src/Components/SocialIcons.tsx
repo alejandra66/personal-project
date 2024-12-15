@@ -1,17 +1,23 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import 'animate.css';
+const SocialIcon: React.FC = () => {
+    const icons = [
+        { icon: faGithub, href: "https://github.com" },
+        { icon: faLinkedin, href: "https://linkedin.com" },
+        { icon: faEnvelope, href: "mailto:someone@example.com" },
+    ];
 
-interface SocialIconProps {
-    icon: any;
-    href: string;
-    color?: string;
-}
-
-const SocialIcon: React.FC<SocialIconProps> = ({ icon, href, color = "#470a1f" }) => {
     return (
-        <a href={href} target="_blank" rel="noopener noreferrer" className="mr-4">
-            <FontAwesomeIcon icon={icon} style={{ color }} className="text-3xl pb-4" />
-        </a>
+        <div className="flex flex-col">
+            {icons.map(({ icon, href }, index) => (
+                <a key={index} href={href} target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={icon} style={{ color: "#470a1f" }} className="text-3xl p-4" />
+                </a>
+            ))}
+        </div>
     );
 };
 
