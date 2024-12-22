@@ -1,12 +1,13 @@
-import React from 'react';
+import React from "react";
 import Navbar from "../Navbar/Navbar";
 import SocialIcon from "../SocialIcons";
-import 'animate.css';
+import "animate.css";
+import InfiniteScroll from "../InfiniteScroll";
 
 const MainContent: React.FC = () => {
     return (
         <>
-            <div className="main-content h-screen bg-gradient-to-l from-violet-red to-cerise-red overflow-hidden">
+            <div className="main-content h-screen bg-gradient-to-r from-purple-400 to-pink-400 overflow-hidden relative">
                 <Navbar />
                 <div className="flex items-center justify-center h-full">
                     {/* Wrapping div for the content and icons, set to flex-row */}
@@ -27,10 +28,15 @@ const MainContent: React.FC = () => {
                         </div>
 
                         {/* Social icons */}
-                        <   div className="animate__animated animate__backInUp">
+                        <div className="animate__animated animate__backInUp">
                             <SocialIcon />
                         </div>
                     </div>
+                </div>
+
+                {/* Infinite Scroll at the bottom */}
+                <div className="absolute bottom-0 left-0 w-full">
+                    <InfiniteScroll />
                 </div>
             </div>
         </>
@@ -38,5 +44,6 @@ const MainContent: React.FC = () => {
 };
 
 export default MainContent;
+
 
 
