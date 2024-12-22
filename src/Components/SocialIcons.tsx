@@ -5,9 +5,9 @@ import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import 'animate.css';
 const SocialIcon: React.FC = () => {
     const icons = [
-        { icon: faGithub, href: "https://github.com" },
-        { icon: faLinkedin, href: "https://linkedin.com" },
-        { icon: faEnvelope, href: "mailto:someone@example.com" },
+        { icon: faGithub, href: "https://github.com/alejandra66" },
+        { icon: faLinkedin, href: "https://www.linkedin.com/in/alejandra-ramos/" },
+        { icon: faEnvelope, href: "mailto:alejandra.ramos@me.com" },
     ];
 
     return (
