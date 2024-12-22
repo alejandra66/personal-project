@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-8">
                 <div className="flex items-center space-x-3 rtl:space-x-reverse">
                     <span className="zeyada-regular passion-one-bold text-4xl self-center whitespace-nowrap text-port-header">
-                        #alejandraRamos
+                        alejandraRamos
                     </span>
                 </div>
                 <div className="flex">
