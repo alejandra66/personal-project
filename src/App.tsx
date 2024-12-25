@@ -1,21 +1,23 @@
 import React from 'react';
 import './App.css';
-import './icons';
-import MainContent from './Components/MainContent/MainContent';
 import { Route, Routes } from 'react-router-dom';
-import HamburgerMenuPage from './Components/Navbar/HamburgerMenu';
+import HomePage from './Pages/HomePage/HomePage';
+import AboutPage from './Pages/About/AboutPage';
+import ProjectsPage from './Pages/Projects/ProjectsPage';
+import HamburgerMenuPage from './Pages/HamburgerMenu/MenuPage';
 import { BrowserRouter } from 'react-router-dom';
 
 const App: React.FC = () => {
     return (
         <BrowserRouter>
             <div className="App">
-                <MainContent />
+                <Routes>
+                    <Route path="/" element={<HomePage />} />
+                    <Route path="/about" element={<AboutPage />} />
+                    <Route path="/projects" element={<ProjectsPage />} />
+                    <Route path="/hamburger-menu" element={<HamburgerMenuPage />} />
+                </Routes>
             </div>
-            <Routes>
-                <Route path="/" element={<MainContent />} />
-                {/*<Route path="/hamburger-menu" element={<HamburgerMenuPage />} />*/}
-            </Routes>
         </BrowserRouter>
     );
 };

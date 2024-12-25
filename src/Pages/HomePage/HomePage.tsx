@@ -1,10 +1,9 @@
 import React from "react";
-import Navbar from "../Navbar/Navbar";
-import SocialIcon from "../SocialIcons";
+import Navbar from "../../Components/Navbar/Navbar";
+import SocialIcon from "../../Components/SocialIcons/SocialIcons";
 import "animate.css";
-import InfiniteScroll from "../InfiniteScroll";
-
-const MainContent: React.FC = () => {
+import InfiniteScroll from "../../Components/InfiniteScroll/InfiniteScroll";
+const HomePage: React.FC = () => {
     return (
         <>
             <div className="main-content h-screen bg-gradient-to-r from-purple-400 to-pink-400 overflow-hidden relative">
@@ -32,18 +31,18 @@ const MainContent: React.FC = () => {
                             <SocialIcon />
                         </div>
                     </div>
-                </div>
 
-                {/* Infinite Scroll at the bottom */}
-                <div className="absolute bottom-0 left-0 w-full">
-                    <InfiniteScroll />
+                    {/* Infinite Scroll at the bottom */}
+                    <div className="absolute bottom-0 left-0 w-full pb-8">
+                        <InfiniteScroll />
+                    </div>
                 </div>
             </div>
         </>
     );
 };
 
-export default MainContent;
+export default HomePage;
 
 
 

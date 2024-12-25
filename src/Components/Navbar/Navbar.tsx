@@ -8,9 +8,9 @@ const Navbar: React.FC = () => {
     const navigate = useNavigate();
 
     const navLinks = [
-        { href: "#home", label: "Home" },
-        { href: "#about", label: "About" },
-        { href: "#projects", label: "Projects" },
+        { href: "/", label: "Home" },
+        { href: "/about", label: "About" },
+        { href: "/projects", label: "Projects" },
     ];
 
     const handleClick = () => {
