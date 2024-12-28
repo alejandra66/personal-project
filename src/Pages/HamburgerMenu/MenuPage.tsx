@@ -15,13 +15,13 @@ const MenuPage: React.FC = () => {
             <button
                 onClick={handleClose}
                 aria-label="Close Menu"
-                className="absolute top-4 right-4 text-2xl font-bold"
+                className="absolute top-4 right-4 text-2xl font-bold text-primary"
             >
                 ✕
             </button>
 
             {/* Menu Content */}
-            <ul className="space-y-4 text-center mt-16">
+            <ul className="space-y-4 text-center mt-16 text-primary passion-one-bold text-2xl">
                 <li><a href="/">Home</a></li>
                 <li><a href="/about">About</a></li>
                 <li><a href="/projects">Projects</a></li>
