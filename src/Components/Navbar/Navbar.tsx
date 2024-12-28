@@ -40,7 +40,7 @@ const Navbar: React.FC = () => {
                         <FontAwesomeIcon
                             icon={faBars}
                             size="2x"
-                            className="visible lg:invisible cursor-pointer text-comp-header"
+                            className="visible lg:invisible cursor-pointer text-primary"
                             onClick={handleClick}
                         />
                     </div>
