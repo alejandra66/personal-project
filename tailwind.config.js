@@ -7,10 +7,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'violet-red': '#fbd0d9',
-        'cerise-red': '#f27a93',
-        'comp-header': '#801b40',
-        'port-header': '#470a1f',
+        'primary': '#470a1f',
+        'secondary': '#801b40',
       },
       fontSize: {
         sm: ['14px', '20px'],
