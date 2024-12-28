@@ -14,7 +14,7 @@ const SocialIcon: React.FC = () => {
         <div className="flex flex-col">
             {icons.map(({ icon, href }, index) => (
                 <a key={index} href={href} target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={icon} style={{ color: "#470a1f" }} className="text-3xl p-4" />
+                    <FontAwesomeIcon icon={icon} className="text-primary text-3xl p-4" />
                 </a>
             ))}
         </div>
